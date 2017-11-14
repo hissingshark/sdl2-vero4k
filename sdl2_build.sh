@@ -21,7 +21,7 @@ export CPPFLAGS=$CFLAGS
 export CXXFLAGS=$CFLAGS
 
 # install specific packages for building  SDL2
-sudo apt-get install -y libasound2-dev libdbus-1-dev
+sudo apt-get install -y libasound2-dev libdbus-1-dev libudev-dev
 
 # pull a fork of SDL2 v.2.0.2 that includes MALI-fbdev support
 cd
