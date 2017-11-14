@@ -5,6 +5,9 @@
 # HissingShark 2017 -
 # *************************************************
 
+# remember whence we came
+pushd .
+
 # stop Kodi to free up resources
 sudo systemctl stop mediacenter
 
@@ -29,4 +32,6 @@ cd libsdl2-2.0.2-dfsg1
 ./configure --enable-video-directfb
 sudo make -j4
 sudo make install
-cd
+
+# aaaand we're back
+popd
