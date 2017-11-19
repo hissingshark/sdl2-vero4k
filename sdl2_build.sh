@@ -8,9 +8,6 @@
 # remember whence we came
 pushd .
 
-# stop Kodi to free up resources
-sudo systemctl stop mediacenter
-
 # install typical building suite
 sudo apt-get update
 sudo apt-get install -y vero3-userland-dev-osmc build-essential git
