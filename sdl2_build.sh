@@ -21,11 +21,16 @@ export CXXFLAGS=$CFLAGS
 sudo apt-get install -y libasound2-dev libdbus-1-dev libudev-dev
 
 # pull a fork of SDL2 v.2.0.2 that includes MALI-fbdev support
-cd
-git clone https://github.com/mihailescu2m/libsdl2-2.0.2-dfsg1.git
+# cd
+# git clone https://github.com/mihailescu2m/libsdl2-2.0.2-dfsg1.git
 
 # build/install SDL2 - a major dependancy of the project
-cd libsdl2-2.0.2-dfsg1
+#cd libsdl2-2.0.2-dfsg1
+
+# scratch previous - the mali-fb support has been merged into the retropie maintained fork giving v2.07
+cd
+git clone https://github.com/RetroPie/SDL-mirror.git --branch mali-2.0.7
+cd SDL-mirror
 ./configure --enable-video-directfb
 sudo make -j4
 sudo make install
