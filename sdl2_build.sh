@@ -31,7 +31,7 @@ sudo apt-get install -y libasound2-dev libdbus-1-dev libudev-dev
 cd
 git clone https://github.com/RetroPie/SDL-mirror.git --branch mali-2.0.7
 cd SDL-mirror
-./configure --enable-video-directfb
+./configure --enable-video-mali
 sudo make -j4
 sudo make install
 
