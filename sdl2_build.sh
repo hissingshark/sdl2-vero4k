@@ -29,9 +29,9 @@ sudo apt-get install -y libasound2-dev libdbus-1-dev libudev-dev
 
 # scratch previous - the mali-fb support has been merged into the retropie maintained fork giving v2.07
 cd
-git clone https://github.com/RetroPie/SDL-mirror.git --branch mali-2.0.7
+git clone https://github.com/RetroPie/SDL-mirror.git --branch mali-2.0.8
 cd SDL-mirror
-./configure --enable-video-mali
+./configure --enable-video-mali --disable-video-vulkan
 sudo make -j4
 sudo make install
 
